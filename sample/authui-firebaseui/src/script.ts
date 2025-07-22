@@ -36,9 +36,11 @@ function isSafari(): boolean {
 const tenantsConfig = {
   // Project level IdPs flow.
   '*': {
-    displayName: 'My Organization',
+    displayName: 'All tenants',
     signInOptions: [
-      FacebookAuthProvider.PROVIDER_ID,
+      {
+        provider: 'oidc.auth0'
+      }
     ],
     // Do not trigger immediate redirect in Safari without some user
     // interaction.
