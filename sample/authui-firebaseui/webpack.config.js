@@ -43,12 +43,12 @@ const config = {
     rules: [
       {
         test: /\.js$/,
-        loader: 'babel-loader',
+        use: 'babel-loader',
         exclude: /node_modules/
       },
       {
         test: /\.ts$/,
-        loader: 'ts-loader',
+        use: 'ts-loader',
         exclude: /node_modules/
       },
       {
@@ -57,7 +57,10 @@ const config = {
       },
       {
         test: /\.(png|woff|woff2|eot|ttf|svg)$/,
-        loader: 'url-loader?limit=100000'
+        loader: 'url-loader',
+        options: {
+          limit: 100000
+        }
       }
     ]
   },

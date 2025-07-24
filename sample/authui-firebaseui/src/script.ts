@@ -42,9 +42,7 @@ const tenantsConfig = {
         provider: 'oidc.auth0'
       }
     ],
-    // Do not trigger immediate redirect in Safari without some user
-    // interaction.
-    immediateFederatedRedirect: !isSafari(),
+    immediateFederatedRedirect: true,
   },
 };
 
