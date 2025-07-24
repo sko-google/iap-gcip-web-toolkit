@@ -86,7 +86,7 @@ describe('AuthServer', () => {
   const PROJECT_ID = 'project-id';
   const API_KEY = 'API_KEY';
   const AUTH_SUBDOMAIN = 'AUTH_SUBDOMAIN';
-  const HOST_NAME = 'gcip-iap-hosted-ui-xyz.uc.run.app';
+  const HOST_NAME = 'xyz.uc.run.app';
   const K_CONFIGURATION = 'service123';
   let app: express.Application;
   let authServer: AuthServer;
